@@ -115,8 +115,7 @@ async def start(bot, message):
         await bot.send_photo(
         chat_id=message.from_user.id,
         photo="https://telegra.ph/file/aa43fb2bc654ec557a35d.jpg",
-        caption=Translation.START_TEXT.format(
-                update.from_user.first_name),
+        caption=START_MSG.format(message.from_user.first_name),
         parse_mode="html",
         reply_to_message_id=update.message_id,
         reply_markup=InlineKeyboardMarkup(
