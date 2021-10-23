@@ -84,10 +84,10 @@ async def start(bot, message):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🖥️ Develper 🖥️', url="https://t.me/Geronimo1234")
+                        InlineKeyboardButton('🖥️ Developer 🖥️', url="https://t.me/Geronimo1234")
                     ],
                     [
-                        InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
+                        InlineKeyboardButton('🔍 Search Here 🔎', switch_inline_query_current_chat='')
                     ]
                     ]
                 await bot.send_cached_media(
