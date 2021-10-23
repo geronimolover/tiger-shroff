@@ -360,4 +360,4 @@ async def bot_info(bot, message):
         caption=f"{ABOUT}",
         parse_mode="html",
         reply_to_message_id=message.message_id,
-        reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+        reply_markup=InlineKeyboardMarkup(buttons))
