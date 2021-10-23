@@ -350,8 +350,14 @@ async def bot_info(bot, message):
         [
             InlineKeyboardButton
                 (
-                     'Video', url=f'{TUTORIAL}'
+                     'Official Group', url="https://t.me/all_super_movies"
                 )
         ]
     ]
-    await message.reply(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await bot.send_photo(
+        chat_id=message.from_user.id,
+        photo="https://telegra.ph/file/70f4c05d49f9e5f14aef8.jpg",
+        caption=f"{ABOUT}",
+        parse_mode="html",
+        reply_to_message_id=message.message_id,
+        reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
