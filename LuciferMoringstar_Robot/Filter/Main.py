@@ -130,9 +130,11 @@ async def group(client, message):
                     [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=pr0fess0r_99_-_-_-_{file_id}")]
                 )
         else:
-            LuciferMoringstar=await client.reply_photo(
+            LuciferMoringstar=await client.send_photo(
+        chat_id=update.chat.id,
         photo="https://telegra.ph/file/86f4da717fc9ba639e469.png",
         caption="👋Hey {message.from_user.mention}\n👉If this movie is not in our database you will not get that movie..\n\n👉Otherwise, the spelling of the name of the requested movie may not be correct...\nSo you go to google and check the spelling of the name of the movie you want.\n\n👉Check if the movie is released\n\n👉Or wait till the movie uploads",
+        reply_to_message_id=update.message_id,
         reply_markup=reply_markup,
         parse_mode="html")
             return
