@@ -188,11 +188,12 @@ async def broadcast_handler_open(_, m):
 
 @Client.on_message(filters.private & filters.command("stats"))
 async def sts(c, m):
-    await m.reply_text(
-        text=f"**Total Users in Database 📂:** `{await db.total_users_count()}``",
-        parse_mode="Markdown",
-        quote=True
-    )
+    await bot.send_photo(
+        chat_id=message.from_user.id,
+        photo="https://telegra.ph/file/49792c8117587d63c358a.png",
+        caption=f"**Total Users in Database 📂:** `{await db.total_users_count()}``",
+        parse_mode="html",
+        reply_to_message_id=message.message_id)
 
 
 @Client.on_message(filters.private & filters.command("ban_user"))
