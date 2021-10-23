@@ -117,7 +117,7 @@ async def start(bot, message):
         photo="https://telegra.ph/file/aa43fb2bc654ec557a35d.jpg",
         caption=START_MSG.format(message.from_user.first_name),
         parse_mode="html",
-        reply_to_message_id=update.message_id,
+        reply_to_message_id=from.message_id,
         reply_markup=InlineKeyboardMarkup(
                 [
                     [
