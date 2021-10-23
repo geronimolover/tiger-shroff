@@ -19,7 +19,7 @@ HELP = """
 
 """
 
-ABOUT = """
+ABOUT = f"""
 ➥ Name : Tiger Shroff
     
 ➥ Developer : [Geronimo](https://t.me/Geronimo1234) 
