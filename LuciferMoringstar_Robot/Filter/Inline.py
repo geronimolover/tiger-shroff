@@ -92,7 +92,7 @@ def get_reply_markup(query):
         InlineKeyboardButton('Channel', url='t.me/free_music123'),
         InlineKeyboardButton('Developer', url='t.me/geronimo1234')
         ],[
-        InlineKeyboardButton('🔍 Search Movie Here 🔎', switch_inline_query_current_chat=query)
+        InlineKeyboardButton('🔍 Search Again 🔎', switch_inline_query_current_chat=query)
         ]]
     return InlineKeyboardMarkup(buttons)
 
