@@ -190,7 +190,7 @@ async def broadcast_handler_open(_, m):
 async def sts(c, m):
     await m.reply_photo(
         photo="https://telegra.ph/file/49792c8117587d63c358a.png",
-        caption=f" **Total Users in Database 📂:** `{await db.total_users_count()}`\n📁 Saved files: {total} ")
+        caption=f" **Total Users in Database 📂:** `{await db.total_users_count()}` ")
 
 
 @Client.on_message(filters.private & filters.command("ban_user"))
