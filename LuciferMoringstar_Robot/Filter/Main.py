@@ -134,7 +134,7 @@ async def group(client, message):
         chat_id=message.chat.id,
         photo="https://telegra.ph/file/86f4da717fc9ba639e469.png",
         caption="👋Hey {message.from_user.mention}\n👉If this movie is not in our database you will not get that movie..\n\n👉Otherwise, the spelling of the name of the requested movie may not be correct...\nSo you go to google and check the spelling of the name of the movie you want.\n\n👉Check if the movie is released\n\n👉Or wait till the movie uploads",
-        reply_to_message_id=update.message_id,
+        reply_to_message_id=message.message_id,
         reply_markup=reply_markup,
         parse_mode="html")
             return
