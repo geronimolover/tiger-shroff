@@ -360,7 +360,7 @@ async def bot_info(bot, message):
         reply_to_message_id=message.message_id,
         reply_markup=InlineKeyboardMarkup(buttons))
     
-    @Client.on_message(filters.command('help'))
+    @Client.on_message(filters.command("help"))
     async def help(bot, message):
         buttons = [
         [
