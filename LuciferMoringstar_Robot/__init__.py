@@ -22,7 +22,7 @@ HELP = """
 ABOUT = """
 ➥ Name : Tiger Shroff
     
-➥ Developer : [Geronimo](t.me/Geronimo1234) 
+➥ Developer : [Geronimo](https//:t.me/Geronimo1234) 
 
 ➥ Language : Python3
 
