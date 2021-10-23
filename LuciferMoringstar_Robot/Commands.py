@@ -361,19 +361,10 @@ async def bot_info(bot, message):
         reply_markup=InlineKeyboardMarkup(buttons))
     
     @Client.on_message(filters.command('help'))
-async def bot_info(bot, message):
-    buttons = [
-        [
-            InlineKeyboardButton
-                (
-                     'Official Group', url="https://t.me/all_super_movies"
-                )
-        ]
-    ]
+
     await bot.send_photo(
         chat_id=message.from_user.id,
         photo="https://telegra.ph/file/d93aad61f215cf725ff87.jpg",
         caption=f"{HELP}",
         parse_mode="md",
-        reply_to_message_id=message.message_id,
-        reply_markup=InlineKeyboardMarkup(buttons))
+        reply_to_message_id=message.message_id)
