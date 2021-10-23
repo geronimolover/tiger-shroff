@@ -19,10 +19,10 @@ HELP = """
 
 """
 
-ABOUT = f"""
+ABOUT = """
 ➥ Name : Tiger Shroff
     
-➥ Developer : [Geronimo](https://t.me/Geronimo1234) 
+➥ Developer : @Geronimo1234 
 
 ➥ Language : Python3
 
