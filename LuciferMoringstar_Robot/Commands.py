@@ -84,7 +84,7 @@ async def start(bot, message):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🖥️ Deploy Now 🖥️', url=f'{TUTORIAL}')
+                        InlineKeyboardButton('🖥️ Develper 🖥️', url="https://t.me/Geronimo1234")
                     ],
                     [
                         InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
@@ -112,10 +112,14 @@ async def start(bot, message):
             )
         )
     else:
-        await message.reply_text(
-            START_MSG.format(message.from_user.first_name),
-            parse_mode="Markdown",
-            disable_web_page_preview=True,
+        await bot.send_photo(
+        chat_id=update.chat.id,
+        photo="https://telegra.ph/file/aa43fb2bc654ec557a35d.jpg",
+        caption=Translation.START_TEXT.format(
+                update.from_user.first_name),
+        reply_markup=reply_markup,
+        parse_mode="html",
+        reply_to_message_id=update.message_id),
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -125,7 +129,7 @@ async def start(bot, message):
                             ),
                         InlineKeyboardButton
                             (
-                                "🤖More Botz", url="https://t.me/MT_Botz"
+                                "🤖Developer", url="https://t.me/Geronimo1234"
                             )
                     ],
                     [
